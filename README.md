@@ -73,31 +73,27 @@ project-root/
 
 ## 시연 영상
 
-### Human Pose-Estimaion 좌표 기반으로 네 가지 수신호 인식
+### Human Pose-Estimation 좌표 기반으로 네 가지 수신호 인식
 
 1. Stop
-- ![Screenshot from 2024-09-27 09-48-08](https://github.com/user-attachments/assets/5a7a6d47-ba49-4156-b5af-e65a3f94b18e)
+- ![Stop Signal](images/screenshot_stop.png)
 
-3. Slowly
-- ![Screenshot from 2024-09-27 09-48-12](https://github.com/user-attachments/assets/ca666ecd-2ce2-4e18-a1e3-f04a44af2ce2)
+2. Slowly
+- ![Slowly Signal](images/screenshot_slowly.png)
 
-4. Go Left
-- ![Screenshot from 2024-09-27 09-48-23](https://github.com/user-attachments/assets/38f1cbf9-33bc-4707-8f68-eb3a18a6a55e)
+3. Go Left
+- ![Go Left Signal](images/screenshot_go_left.png)
 
-5. Go Right
-- ![Screenshot from 2024-09-27 09-48-19](https://github.com/user-attachments/assets/e64aa39a-db86-49f4-af80-7f821f571cb7)
-
+4. Go Right
+- ![Go Right Signal](images/screenshot_go_right.png)
 
 ### 각 수신호에 따른 모터 제어
 
 1. Stop
-- ![stop](https://github.com/user-attachments/assets/b7843b21-94e9-48bc-988d-dc02ed6a5bac)
+- ![Stop Motor](images/motor_stop.png)
 
 2. Slowly
-- ![slowly](https://github.com/user-attachments/assets/4cce12f0-26ee-4c23-be2b-55257f3c1a27)
+- ![Slowly Motor](images/motor_slowly.png)
 
 3. Go Right, Left
-- ![turn](https://github.com/user-attachments/assets/d550433a-5288-4c27-a3ef-1eb377aa5029)
-
-
-
+- ![Turn Motor](images/motor_turn.png)
