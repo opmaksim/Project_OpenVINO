@@ -5,10 +5,20 @@
 - 박준수
 - 김도하
 
+## 프로젝트 배경
+차량 고장 등 도로에서 불가피하게 차량을 움직일 수 없을 때 사람의 수신호를 인식하여 사고를 예방하기 위함
+- ![image](https://github.com/user-attachments/assets/f9269aaf-fb24-4ef4-b2e1-c02d0b18750b)
+- ![image](https://github.com/user-attachments/assets/71840e94-e016-48af-8e27-574afef61611)
+
+
 ## 프로젝트 개요
 이 프로젝트는 **OpenVINO**를 활용하여 실시간 포즈 인식과 모터 제어를 구현하는 미니 프로젝트입니다.
-사용자는 카메라를 통해 실시간으로 인식된 자세에 따라 28BYJ-48 스테퍼 모터, 5V DC 모터를 제어할 수 있습니다.
+사용자는 카메라를 통해 실시간으로 인식된 자세에 따라 서보 모터, 5V DC 모터를 제어할 수 있습니다.
 이 시스템은 두 가지 주요 모델을 사용하여 동작합니다: **포즈 인식 모델**과 **모노 뎁스(mono-depth) 모델**입니다.
+
+## 프로젝트 아키텍쳐
+![미니프로젝트 아키텍쳐 drawio](https://github.com/user-attachments/assets/b22eb5b6-36b7-4f27-bbce-e5526387d7de)
+
 
 ## 사용된 모델
 - **pose-estimation**: 사용자의 실시간 자세를 추적하여 주요 관절 위치를 감지합니다.
@@ -28,14 +38,13 @@
 project-root/
 │
 ├── src/
-│   ├── pose_estimation.py      # 포즈 인식 관련 코드
-│   ├── mono_depth.py           # 모노 뎁스 관련 코드
+│   ├── human-pose-estimation.py      # 포즈 인식 관련 코드
+│   ├── vision-mono-depth.py           # 모노 뎁스 관련 코드
 │   ├── motor_control.ino       # Arduino에서 모터 제어 코드
-│   └── utils.py                # 공통 유틸리티 코드
 │
 ├── models/
-│   ├── pose_estimation_model   # OpenVINO 포즈 인식 모델
-│   └── mono_depth_model        # OpenVINO 모노 뎁스 모델
+│   ├── human-pose-estimation   # OpenVINO 포즈 인식 모델
+│   └── MiDas_small        # OpenVINO 모노 뎁스 모델
 │
 ├── README.md                   # 프로젝트 설명
 └── requirements.txt            # Python 의존성 목록
@@ -61,3 +70,34 @@ project-root/
 
 ### 4. Arduino에서 모터 제어 코드 업로드
 - Arduino IDE를 열고, `src/motor_control.ino` 코드를 업로드합니다.
+
+## 시연 영상
+
+### Human Pose-Estimaion 좌표 기반으로 네 가지 수신호 인식
+
+1. Stop
+- ![Screenshot from 2024-09-27 09-48-08](https://github.com/user-attachments/assets/5a7a6d47-ba49-4156-b5af-e65a3f94b18e)
+
+3. Slowly
+- ![Screenshot from 2024-09-27 09-48-12](https://github.com/user-attachments/assets/ca666ecd-2ce2-4e18-a1e3-f04a44af2ce2)
+
+4. Go Left
+- ![Screenshot from 2024-09-27 09-48-23](https://github.com/user-attachments/assets/38f1cbf9-33bc-4707-8f68-eb3a18a6a55e)
+
+5. Go Right
+- ![Screenshot from 2024-09-27 09-48-19](https://github.com/user-attachments/assets/e64aa39a-db86-49f4-af80-7f821f571cb7)
+
+
+### 각 수신호에 따른 모터 제어
+
+1. Stop
+- ![stop](https://github.com/user-attachments/assets/b7843b21-94e9-48bc-988d-dc02ed6a5bac)
+
+2. Slowly
+- ![slowly](https://github.com/user-attachments/assets/4cce12f0-26ee-4c23-be2b-55257f3c1a27)
+
+3. Go Right, Left
+- ![turn](https://github.com/user-attachments/assets/d550433a-5288-4c27-a3ef-1eb377aa5029)
+
+
+
