@@ -68,7 +68,7 @@ project-root/
 ### 3. 코드 실행
 - **포즈 인식 및 깊이 감지**를 위한 Python 코드 실행:
   ```bash
-  python src/pose_estimation.py
+  python src/human-pose_estimation.py
   ```
 
 ### 4. Arduino에서 모터 제어 코드 업로드
