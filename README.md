@@ -100,3 +100,6 @@ project-root/
 
 3. Go Right, Left
 - ![Turn Motor](images/turn.gif)
+
+### mono-depth를 이용한 거리 탐지 후 알람 표시
+- ![Detect object](images/detect.gif)
