@@ -37,6 +37,9 @@
 ```
 project-root/
 │
+├── images/
+│   ├── images....      #관련 이미지들
+│
 ├── src/
 │   ├── human-pose-estimation.py      # 포즈 인식 관련 코드
 │   ├── vision-mono-depth.py           # 모노 뎁스 관련 코드
