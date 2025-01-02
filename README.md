@@ -7,8 +7,8 @@
 
 ## 프로젝트 배경
 차량 고장 등 도로에서 불가피하게 차량을 움직일 수 없을 때 사람의 수신호를 인식하여 사고를 예방하기 위함
-- ![image](images/ex1.png)
-- ![image](images/ex2.png)
+- ![image](image/ex1.png)
+- ![image](image/ex2.png)
 
 
 ## 프로젝트 개요
@@ -17,7 +17,7 @@
 이 시스템은 두 가지 주요 모델을 사용하여 동작합니다: **포즈 인식 모델**과 **모노 뎁스(mono-depth) 모델**입니다.
 
 ## 프로젝트 아키텍쳐
-![미니프로젝트 아키텍쳐 drawio](images/mini-project.png)
+![미니프로젝트 아키텍쳐 drawio](image/mini-project.png)
 
 
 ## 사용된 모델
