@@ -74,35 +74,35 @@ project-root/
 ### 4. Arduino에서 모터 제어 코드 업로드
 - Arduino IDE를 열고, `src/motor_control.ino` 코드를 업로드합니다.
 
-## 시연 영상
+## 네 가지 포즈
 
 ### Human Pose-Estimation 좌표 기반으로 네 가지 수신호 인식
 
-1. Stop
-- ![Stop Signal](images/stop.png)
+### Stop
+![Stop Signal](image/stop.png)
 
-2. Slowly
-- ![Slowly Signal](images/slowly.png)
+### Slowly
+![Slowly Signal](image/slowly.png)
 
-3. Go Left
-- ![Go Left Signal](images/left.png)
+### Go Left
+![Go Left Signal](image/left.png)
 
-4. Go Right
-- ![Go Right Signal](images/right.png)
+### Go Right
+![Go Right Signal](image/right.png)
 
-### 각 수신호에 따른 모터 제어
+## 시연 영상
 
-1. Stop
-- ![Stop Motor](images/stop.gif)
+### [Stop](https://drive.google.com/file/d/1xBECL5Q2OqH8acAOmrYetMy-9WOebeU1/view?usp=sharing)
+![Stop Motor](image/stop.gif)
 
-2. Slowly
-- ![Slowly Motor](images/slowly.gif)
+### [Slowly](https://drive.google.com/file/d/1_HyhU0iWouYyZry5jvavqqjQRTiqIGJe/view?usp=sharing)
+![Slowly Motor](image/slowly.gif)
 
-3. Go Right, Left
-- ![Turn Motor](images/turn.gif)
+### [Go Right, Left](https://drive.google.com/file/d/1Wo_ZIIghUOubYYF1rjRTD8pIvOtcW5km/view?usp=sharing)
+![Turn Motor](image/turn.gif)
 
-### mono-depth를 이용한 거리 탐지 후 알람 표시
-- ![Detect object](images/detect.gif)
+### [mono-depth를 이용한 거리 탐지 후 알람 표시](https://drive.google.com/file/d/17OL09RmyCpSNw-SFXFKhLST-ax3_p21h/view?usp=sharing)
+![Detect object](image/detect.gif)
 
 ## 발표 자료
-- [바로 가기](https://www.canva.com/design/DAGR7OjcVNo/ehu66mW8LJn-WiH2b8R30Q/edit?utm_content=DAGR7OjcVNo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+### [바로 가기](Project_OpenVINO.pdf)
